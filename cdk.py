@@ -17,7 +17,7 @@ class GradioLambda(Stack):
             "GradioApp",
             code=DockerImageCode.from_image_asset(str(Path.cwd()), file="Dockerfile"),
             architecture=Architecture.X86_64,
-            memory_size=1024,
+            memory_size=512,
             timeout=Duration.minutes(2),
         )
         # add HTTPS url
